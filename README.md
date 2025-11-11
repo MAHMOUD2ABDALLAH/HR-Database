@@ -1,38 +1,44 @@
-# HR Database Management System
+# DDL & DML Exercises
 
-## Overview
-A complete SQL Server database solution for Human Resources management, featuring employee records, job history tracking, departmental organization, and location management.
+This repository contains SQL exercises demonstrating Data Definition Language (DDL) and Data Manipulation Language (DML) operations.
 
-## Database Schema
+## INSTRUCTOR Table Operations
 
-### Core Tables:
-- **EMPLOYEES** - Master employee records with personal and employment details
-- **JOBS** - Job positions with salary ranges and titles
-- **DEPARTMENTS** - Organizational departments with management hierarchy
-- **JOB_HISTORY** - Historical tracking of employee position changes
-- **LOCATIONS** - Physical department locations and assignments
+### Table Structure
+The `INSTRUCTOR` table has the following schema:
+- `ins_id` INTEGER (Primary Key, Not Null)
+- `lastname` VARCHAR(15) (Not Null)
+- `firstname` VARCHAR(15) (Not Null)
+- `city` VARCHAR(15)
+- `country` CHAR(2)
 
-## Key Features
-- Employee information management (personal details, salary, reporting structure)
-- Job position and salary band definitions
-- Departmental organization with manager assignments
-- Comprehensive job history tracking
-- Location-based department mapping
-- Referential integrity across all entities
+### SQL Operations Included
 
-## Table Relationships
-- Employees belong to Departments (`DEP_ID` → `DEPT_ID_DEP`)
-- Employees have Job positions (`JOB_ID` → `JOB_IDENT`)
-- Job History tracks employee career progression
-- Departments are associated with Locations
+#### DDL (Data Definition Language)
+- **Create Table**: Creates the INSTRUCTOR table structure
+- **Drop Table**: Removes the existing table (if any) before creation
 
-## Installation
-1. Execute the schema scripts in SSMS
-2. Tables will be automatically dropped and recreated
-3. Populate with your organizational data
+#### DML (Data Manipulation Language)
+- **INSERT**: Adds new records to the table
+  - Single row insertion for Rav Ahuja
+  - Multiple rows insertion for Raul Chong and Hima Vasudevan
+- **SELECT**: Retrieves data from the table
+  - Select all columns
+  - Select specific columns with WHERE clause
+- **UPDATE**: Modifies existing data (changes city for Rav)
+- **DELETE**: Removes specific records (deletes Raul Chong)
 
-## Use Cases
-- Employee onboarding and offboarding
-- Salary administration and position management
-- Organizational reporting and analytics
-- HR compliance and record keeping
+### Sample Data
+Initial data after insertion:
+| ins_id | lastname  | firstname | city    | country |
+|--------|-----------|-----------|---------|---------|
+| 1      | Ahuja     | Rav       | Toronto | CA      |
+| 2      | Chong     | Raul      | Toronto | CA      |
+| 3      | Vasudevan | Hima      | Chicago | US      |
+
+### Usage
+Run the SQL commands in sequence to see how each DDL and DML operation affects the database table.
+
+## Technologies
+- SQL
+- Database Management Systems
