@@ -42,3 +42,6 @@ Run the SQL commands in sequence to see how each DDL and DML operation affects t
 ## Technologies
 - SQL
 - Database Management Systems
+
+<img width="200" height="200" alt="Upwork" src="https://github.com/user-attachments/assets/d067e215-eb8f-4d4b-a153-bc4aa76ce221" />
+
