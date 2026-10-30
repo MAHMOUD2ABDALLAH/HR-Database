@@ -1,5 +1,5 @@
 # HR Database Management System
-
+### [Exercise](https://github.com/MAHMOUD2ABDALLAH/HR-Database/tree/exercise)
 ## Overview
 A complete SQL Server database solution for Human Resources management, featuring employee records, job history tracking, departmental organization, and location management.
 
