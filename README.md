@@ -36,5 +36,3 @@ A complete SQL Server database solution for Human Resources management, featurin
 - Salary administration and position management
 - Organizational reporting and analytics
 - HR compliance and record keeping
-
-<img src="https://github.com/user-attachments/assets/43d8da7a-8c02-42f5-a367-eb83b90d078c" alt="Upwork Logo" width="50" />
